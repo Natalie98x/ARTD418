@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    
+    <body style="background-color:black;"></body>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Avenir Next, sans-serif;
+text-align: left;
+    color: white;
+    width: 100%;
+
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: dimgray;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 75px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+font-size: 30px;
+    font-family: American Typewriter;
+}
+       
+</style>
+</head>
+<body>
+    
+
+<div id="navbar" style="width: 100%";>
+  <a href="javascript:void(0)" href="project4.html">Home</a>
+  <a class="active">Statistics</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+<img src="Images/marlon-michelle-corado-DbL2_B_oInc-unsplash.jpg" style="width: inherit;">
+      <div class="bottom-left">Tuxtla Gutiérrez, Chiapas, Mexico</div>
+    <div class="content">
+  <h1 style="font-size: 30px;  color: white; font-family: American Typerwriter, monospace; width: 60%; padding-top: 140px;"> Statistics</h1>
+  <p style="width: 42%; padding-bottom: 100px;">In 2008, 18.2 percent of the population in Mexico was in poverty meaning they could not buy adequate food for their families even if they used their entire income. An analysis done by CONEVAL found that the states with the highest percentages of food poverty were Chiapas, Guerrero and Oaxaca.
+ </p>
+        
+</div>
+<img src="Screen%20Shot%202020-04-22%20at%2012.47.54%20PM.png" style="padding-left: 350px; width: 400px; height: 400px;">
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
